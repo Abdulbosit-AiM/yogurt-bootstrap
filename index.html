@@ -14,54 +14,70 @@
     
     <div class="container">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo-dans-meat-yogurt.svg" alt="Meaty Yogurt Logo" width="150">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ps-3 pe-3 ms-md-3 btn btn-outline-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Flavors
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link ps-3 pe-3 ms-md-3 btn btn-outline-light" href="#">Contact</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
 
         <!-- JumboTron -->
         <div class="p-5 mb-4 rounded-3">
-            <div class="container-fluid py-5">
-              <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-              <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-              <button class="btn btn-primary btn-lg" type="button">Example button</button>
-            </div>
+          <div class="row">
+              <div class="col-md-7 col-12 text-center text-md-left">
+                <div class="container-fluid py-5 ">
+                <h1 class="display-2 text-white drop-shadow fw-bold">Thick & Creamy</h1>
+                <p class="fs-2 text-white text-md-left">With real meat chunks.</p>
+                <button class="btn btn-outline-light btn-lg mt-4 pt-3 pb-3 ps-5 pe-5 mb-3" type="button">Pricing</button>
+                </div>
+              </div>
+
+              <div class="col-md-5 col-12">
+                  <img src="./images/hero1.png" alt="yogurt-1" class="img-fluid">
+              </div>
+          </div>
+        </div>
+
+        <!-- Founder's Message -->
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img src="./images/headshot-dan.jpg" alt="Daniel Scott" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-8 bg-white p-5">
+            <h2 class="display-6">Message from our Founder</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui dolore eos maiores adipisci culpa, voluptate quasi. Et a, iure expedita quisquam perferendis culpa, dolor earum necessitatibus vitae rem nostrum.</p>
+          </div>
         </div>
 
         <!-- Carousel -->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide d-none d-md-block mb-3" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./images/yogurt-1.png" class="d-block w-100" alt="...">
@@ -84,38 +100,36 @@
         </div>
 
         <!-- Cards -->
-        <div class="row d-flex justify-space-between">
-            <div class="card" style="width: 18rem;">
+        <div class="card-deck d-flex my-5 justify-content-between">
+            <div class="card shadow m-2" style="width: 18rem;">
                 <img src="./images/product1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
                 </div>
             </div>
     
-            <div class="card" style="width: 18rem;">
+            <div class="card shadow m-2" style="width: 18rem;">
                 <img src="./images/product2.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
                 </div>
             </div>
     
-            <div class="card" style="width: 18rem;">
+            <div class="card shadow m-2" style="width: 18rem;">
                 <img src="./images/product3.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
                 </div>
             </div>
-    
         </div>
+      </div>
 
-
-    </div>
 
 
 
